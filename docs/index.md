@@ -15,6 +15,8 @@ Client-facing mobile app for VAly voice sessions.
 
 - [Setup Guide](SETUP_GUIDE.md)
 - [End-to-End Runbook](E2E_RUNBOOK.md)
+- [System Architecture](SYSTEM_ARCHITECTURE.md)
+- [Stack and Versions](STACK_AND_VERSIONS.md)
 - [Repo Relationships](REPO_RELATIONS.md)
 - [Project Report](PROJECT_REPORT.md)
 

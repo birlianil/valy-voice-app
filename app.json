@@ -1,15 +1,15 @@
 {
   "expo": {
     "name": "VAly Voice App",
-    "slug": "valy-voice-app",
+    "slug": "va-voice-codex",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#040a1d"
     },
     "ios": {
       "supportsTablet": true,
@@ -22,10 +22,9 @@
     "android": {
       "package": "com.valy.voiceapp",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundColor": "#040a1d",
+        "foregroundImage": "./assets/icon.png",
+        "monochromeImage": "./assets/icon.png"
       },
       "predictiveBackGestureEnabled": false,
       "permissions": [

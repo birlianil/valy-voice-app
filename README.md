@@ -65,9 +65,12 @@ This app uses LiveKit React Native + WebRTC native modules.
 
 - Setup guide: [docs/SETUP_GUIDE.md](docs/SETUP_GUIDE.md)
 - End-to-end runbook: [docs/E2E_RUNBOOK.md](docs/E2E_RUNBOOK.md)
+- System architecture: [docs/SYSTEM_ARCHITECTURE.md](docs/SYSTEM_ARCHITECTURE.md)
+- Stack and versions: [docs/STACK_AND_VERSIONS.md](docs/STACK_AND_VERSIONS.md)
 - Repo relations: [docs/REPO_RELATIONS.md](docs/REPO_RELATIONS.md)
 - Project report: [docs/PROJECT_REPORT.md](docs/PROJECT_REPORT.md)
 - GitHub Pages landing: [docs/index.md](docs/index.md)
+- Changelog: [CHANGELOG.md](CHANGELOG.md)
 
 ## Publish As Separate GitHub Repo
 
