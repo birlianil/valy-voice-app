@@ -13,10 +13,10 @@ Client-facing mobile app for VAly voice sessions.
 
 ## Start Here
 
-- [Kurulum Rehberi (TR)](SETUP_GUIDE_TR.md)
-- [E2E Runbook (TR)](E2E_RUNBOOK_TR.md)
+- [Setup Guide](SETUP_GUIDE.md)
+- [End-to-End Runbook](E2E_RUNBOOK.md)
 - [Repo Relationships](REPO_RELATIONS.md)
-- [Proje Raporu (TR)](PROJECT_REPORT_TR.md)
+- [Project Report](PROJECT_REPORT.md)
 
 ## What Is In This Repo
 
