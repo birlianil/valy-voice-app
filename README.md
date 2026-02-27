@@ -1,6 +1,6 @@
 # VAly Voice App
 
-React Native (Expo) mobile client for VAly voice sessions over LiveKit.
+React Native mobile client for VAly voice sessions over LiveKit.
 
 This repository is a client example app. Core backend/agent code lives in other repositories.
 
