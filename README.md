@@ -1,0 +1,82 @@
+# VAly Voice App
+
+React Native (Expo) mobile client for VAly voice sessions over LiveKit.
+
+This repository is a client example app. Core backend/agent code lives in other repositories.
+
+## Related Repositories
+
+- Main backend monorepo: [voiceagentlive-openai](https://github.com/birlianil/voiceagentlive-openai)
+- Split backend repos:
+  - [va-voice-agent-worker](https://github.com/birlianil/va-voice-agent-worker)
+  - [va-voice-token-server](https://github.com/birlianil/va-voice-token-server)
+  - [va-voice-tools-api](https://github.com/birlianil/va-voice-tools-api)
+
+## Features
+
+- Connect to custom `token-server` and LiveKit server
+- Optional `x-api-key` header support for `/token`
+- Join voice room with chosen room name and identity
+- Development build workflow for Android and iOS
+
+## Architecture
+
+```mermaid
+flowchart LR
+  app["VAly Voice App (React Native)"] --> token["Token Server (:3000)"]
+  app --> lk["LiveKit Server (:7880)"]
+  token --> lk
+  lk --> worker["Agent Worker"]
+  worker --> tools["Tools API / Data Services"]
+```
+
+## Quick Start
+
+1. Install dependencies:
+
+```bash
+cd /Users/anilbirli/Documents/va-voice-codex
+npm install
+```
+
+2. Start backend stack in the main backend repository:
+- `token-server` on `3000`
+- `livekit` on `7880`
+- `agent-worker` connected to LiveKit
+
+3. Start development server:
+
+```bash
+npm run start:dev
+```
+
+4. Open app and set:
+- Token URL: `http://<LAN_IP>:3000`
+- LiveKit WS: `ws://<LAN_IP>:7880`
+
+## Important: Expo Go vs Dev Build
+
+This app uses LiveKit React Native + WebRTC native modules.
+
+- `Expo Go`: not suitable for this app
+- `Development Build`: required
+
+## Documentation
+
+- Setup guide (TR): [docs/SETUP_GUIDE_TR.md](docs/SETUP_GUIDE_TR.md)
+- End-to-end runbook (TR): [docs/E2E_RUNBOOK_TR.md](docs/E2E_RUNBOOK_TR.md)
+- Repo relations: [docs/REPO_RELATIONS.md](docs/REPO_RELATIONS.md)
+- Project report (TR): [docs/PROJECT_REPORT_TR.md](docs/PROJECT_REPORT_TR.md)
+- GitHub Pages landing: [docs/index.md](docs/index.md)
+
+## Publish As Separate GitHub Repo
+
+```bash
+cd /Users/anilbirli/Documents/va-voice-codex
+git init
+git add .
+git commit -m "chore: initialize VAly Voice App"
+git branch -M main
+git remote add origin <NEW_REPO_URL>
+git push -u origin main
+```

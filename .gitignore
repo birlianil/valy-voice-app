@@ -39,3 +39,9 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# local generated QR artifacts
+android-devclient-apk-qr.png
+android-metro-devclient-qr.png
+android-metro-exp-qr.png
+expo-link-qr.png

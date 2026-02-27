@@ -1,16 +1,23 @@
 {
-  "name": "va-voice-codex",
+  "name": "valy-voice-app",
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
     "start": "expo start",
+    "start:dev": "expo start --dev-client",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web"
   },
   "dependencies": {
-    "expo": "~55.0.3",
+    "@config-plugins/react-native-webrtc": "^13.0.0",
+    "@livekit/react-native": "^2.9.6",
+    "@livekit/react-native-expo-plugin": "^1.0.1",
+    "@livekit/react-native-webrtc": "^137.0.2",
+    "expo": "~55.0.4",
+    "expo-dev-client": "~55.0.10",
     "expo-status-bar": "~55.0.4",
+    "livekit-client": "^2.17.2",
     "react": "19.2.0",
     "react-native": "0.83.2"
   },
